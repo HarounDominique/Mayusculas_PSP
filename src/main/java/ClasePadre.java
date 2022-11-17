@@ -16,15 +16,15 @@ public class ClasePadre {
 
             String linea;
 
-            while((linea = in.readLine()).compareTo("")!=0){
+            while((linea = in.readLine()).compareTo("fin")!=0){
 
                 //System.out.println(linea);
                 ps.println(linea);
                 ps.flush();
-
                 System.out.println(br.readLine());
             }
             System.out.println("Finalizado.");
+            proceso.destroy();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
