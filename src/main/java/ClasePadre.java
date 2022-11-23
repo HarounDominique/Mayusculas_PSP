@@ -4,7 +4,7 @@ public class ClasePadre {
     public static void main(String[] args) {
 
         try {
-            File directorio = new File("D:\\IntelliJ_Projects\\Mayusculas\\target\\classes");
+            File directorio = new File("C:\\Users\\a21dominicohl\\IdeaProjects\\Mayusculas_PSP\\target\\classes");
             ProcessBuilder pb = new ProcessBuilder("java", "ClaseHijo");
             pb.directory(directorio);
             Process proceso = pb.start();
@@ -28,6 +28,5 @@ public class ClasePadre {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 }
